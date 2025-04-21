@@ -1,0 +1,445 @@
+.App {
+	text-align: center;
+  }
+  
+  header {
+    position: fixed;
+    height: 100px;
+    width: 93.5vw;
+    backdrop-filter: blur(4px);
+    background: #000000c0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 0px;
+}
+  
+  .logo{
+	  width: 60px;
+	  height: 60px;
+	  padding-right: 10px;
+    vertical-align:middle;
+    font-family: "cursive";
+  }
+  
+  .eth{
+	  width: 20px;
+	  height: 20px;
+	  padding-right: 10px;
+  }
+  
+  .leftH {
+	 display: flex;
+	 align-items: center;
+	 gap: 20px;
+  }
+  
+  .rightH {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+  
+  .headerItem {
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+  }
+  
+  .headerItem:hover {
+    background-color: rgb(243, 197, 26);
+    cursor: pointer;
+  }
+  
+  .connectButton {
+    background-color: rgb(71 104 255);
+    padding: 12px 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+  
+  .Button-0 {
+    background-color: rgb(125,255,91);
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+    width: 80%;
+    color: #000000;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .Button-1 {
+    background-color: rgb(186,72,238);
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    width: 80%;
+    transition: 0.3s;
+    margin: 10px;
+  }
+
+  .disconnectButton {
+    background-color: rgb(255, 79, 25);
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .connectButton:hover {
+    cursor: pointer;
+    color: #ffe7a5;
+  }
+  
+  .mainWindow {
+    position: relative;
+    top: 360px;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+  }
+  
+  .main-generator-window-parent {
+    position: relative;
+    top: 160px;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+  }
+  
+  .link {
+    text-decoration: none;
+  }
+  
+  .tradeBox {
+    width: 400px;
+    background-color: #0E111B;
+    border: 2px solid #21273a;
+    min-height: 300px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .medium-box {
+    width: 60%;
+    background: #00000066;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    min-height: 300px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 50px;
+}
+  
+  .tradeBoxHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+  }
+  
+  .cog {
+	color: #51586f;
+	transition: 0.3s;
+  }
+  
+  .cog:hover {
+	color: white;
+	rotate: 90deg;
+	cursor: pointer;
+  }
+  
+  .switchButton {
+	background-color: #3a4157;
+	width: 25px;
+	height: 25px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	border-radius: 8px;
+	position: absolute;
+	top: 86px;
+	left: 180px;
+	color: #5F6783;
+	border: 3px solid #0E111B;
+	font-size: 12px;
+	transition: 0.3s
+  }
+  
+  .dollarAmount {
+	position: absolute;
+	top: 75px;
+	left: 14px;
+	font-size: 10px;
+	color: #5F6783;
+  }
+  
+  .switchButton:hover {
+	color: white;
+	cursor: pointer;
+  }
+  
+  .inputs {
+	position: relative;
+  }
+  
+  .assetOne {
+    position: absolute;
+    min-width: 50px;
+    height: 30px;
+    background-color: #3a4157;
+    top: 36px;
+    right: 20px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+    font-size: 17px;
+    padding-right: 8px;
+  }
+  
+  .assetTwo {
+	position: absolute;
+	min-width: 50px;
+	height: 30px;
+	background-color: #3a4157;
+	top: 135px;
+	right: 20px;
+	border-radius: 100px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 5px;
+	font-weight: bold;
+	font-size: 17px;
+	padding-right: 8px;
+  }
+  
+  .assetOne:hover{
+	cursor: pointer;
+  }
+  
+  .assetTwo:hover{
+	cursor: pointer;
+  }
+  
+  .assetLogo {
+	height: 22px;
+	margin-left: 5px;
+  }
+  
+  .swapButton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #243056; 
+	width: calc(100%);
+	height: 55px;
+	font-size: 20px;
+	border-radius: 12px;
+	color: #5981F3;
+	font-weight: bold;
+	transition: 0.3s;
+	margin-bottom: 30px;
+	margin-top: 8px;
+  }
+  
+  .swapButton[disabled] {
+	background-color: #243056;
+	opacity: 0.4;
+	color: #5982f39b;
+  }
+  
+  .swapButton[disabled]:hover {
+	cursor: not-allowed;
+	background-color: #243056;
+  }
+  
+  .swapButton:hover {
+	cursor: pointer;
+	background-color: #3b4874
+  }
+  
+  .tokenLogo {
+	height: 40px;
+	width: 40px;
+  }
+  
+  .modalContent {
+	border-top: 1px solid #363e54;
+	/* padding-top: 20px; */
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px
+  }
+  
+  .tokenChoice {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+  }
+  
+  .tokenChoice:hover {
+	cursor: pointer;
+	background-color: #1f2639;
+  }
+  
+  .tokenName {
+	margin-left: 10px;
+	font-size: 16px;
+	font-weight: 500;
+  }
+  
+  .tokenTicker {
+	margin-left: 10px;
+	font-size: 13px;
+	font-weight: 300;
+	color: #51596f;
+  }
+
+
+
+#Top-Title {
+  float: left;
+  width: 65%;
+  font-family: monospace;
+  font-size: 75px;
+  color: #ffffff;
+  /* background: linear-gradient(rgba(55, 186, 184, 0.384), rgba(212, 40, 255, 0.378)); */
+  background: #21273a79;
+  font-weight: revert;
+}
+
+#Top-Title-Right {
+  float: right;
+  width: 65%;
+  font-family: monospace;
+  font-size: 75px;
+  background: #d08fffab;
+  color: #ffffff;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  font-weight: revert;
+}
+
+#Top-Title-Div {
+  position:relative;
+  top:130px;
+  display: flex;
+  /* background: url("../public/v1027-107-a.jpg"); */
+  filter: contrast(0.6);
+  padding: 80px;
+}
+
+#Top-Title-Div-Right {
+  position:relative;
+  top:200px;
+  display: flex;
+  background: #1f263972;
+  backdrop-filter: blur(5px);;
+  margin-top: 85px;
+  justify-content: right;
+  padding: 80px;
+}
+
+#Top-Title-Div-Three {
+  position:relative;
+  top:300px;
+  display: flex;
+  /* background: url("https://static1.srcdn.com/wordpress/wp-content/uploads/2022/08/Fantasy-forest-scene.jpg");
+  filter: grayscale(1); */
+  background: #1f263972;
+  margin-top: 50px;
+  padding: 80px;
+  background-size: contain;
+}
+
+#bgreen-text {
+  color: rgb(0, 255, 179);
+}
+
+@media only screen and (max-width: 600px) {
+  #Top-Title-Div, #Top-Title-Div-Right, #Top-Title-Div-Three {
+    width: 330px;
+    justify-content: center;
+}
+  #Top-Title-Right {
+    float: right;
+    width: 70%;
+    padding: 60px;
+    font-family: ui-monospace;
+    font-size: 50px;
+    color: #ffffff;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    font-weight: revert;
+  }
+  #Top-Title {
+    width: 90%;
+    padding: 70px;
+    margin: 10px;
+    font-family: ui-monospace;
+    font-size: 76px;
+    color: #ffffff;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    font-weight: revert;
+}
+  .rightH {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  margin-left: 80px;
+ }
+  .tradeBox-two {
+    margin-left: 5%;
+    height: 25%;
+    width: 400px;
+ }
+  #root {
+    width: fit-content;
+ }
+ .App-Main {
+   background-size: 780px !important;
+   /* background-attachment: fixed; */
+}
+
+}
